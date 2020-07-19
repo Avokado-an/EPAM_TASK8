@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.Collections;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class BookCreatorTest {
     BookCreator creator;
@@ -31,7 +31,7 @@ public class BookCreatorTest {
 
     @DataProvider(name = "invalidBook")
     public Object[][] createInvalidBook() {
-        return new Object[][] {
+        return new Object[][]{
                 {"-1234", "a", "a", "a"}, {"2050", "a", "a", "a"}, {null, "a", "a", "a"},
                 {"", "aa&a", "a", "a"},
                 {"1234", "aa&a", "a", "a"}, {"1234", null, "a", "a"}, {"1234", "", "a", "a"},

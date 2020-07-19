@@ -6,6 +6,9 @@ import com.anton.day6.controller.exception.ControllerException;
 import com.anton.day6.controller.type.CommandType;
 
 public class ActionProvider {
+    private ActionProvider() {
+    }
+
     public static Command provideAction(String action) {
         Command command;
         try {

@@ -79,7 +79,7 @@ public class Book {
             return false;
         }
         Book book = (Book) o;
-        if(book.getAuthors().size() != getAuthors().size()) {
+        if (book.getAuthors().size() != getAuthors().size()) {
             return false;
         }
         if (!getAuthors().containsAll(book.getAuthors())) {

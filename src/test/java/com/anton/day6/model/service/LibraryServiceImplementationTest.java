@@ -137,7 +137,7 @@ public class LibraryServiceImplementationTest {
 
     @DataProvider(name = "invalidYearTag")
     public Object[][] createInvalidYearTag() {
-        return new Object[][] {
+        return new Object[][]{
                 {null}, {"-1234"}, {"werewr"}, {"20002002"}
         };
     }
@@ -149,7 +149,7 @@ public class LibraryServiceImplementationTest {
 
     @DataProvider(name = "invalidTag")
     public Object[][] createInvalidTag() {
-        return new Object[][] {
+        return new Object[][]{
                 {null}
         };
     }

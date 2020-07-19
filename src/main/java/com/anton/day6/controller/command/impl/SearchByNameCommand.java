@@ -18,9 +18,7 @@ public class SearchByNameCommand implements Command {
         try {
             String name = request.get(ResponseParameters.NAME);
             List<Book> books = LibraryServiceImplementation.getInstance().findBooksByName(name);
-            StringBuilder message = new StringBuilder();
-            message.append(ResponseParameters.FIND).append(ResponseParameters.NAME).append(": ").append(name);
-            response.put(message.toString(), books);
+            response.put(ResponseParameters.OPERATION_SUCCEED, books);
         } catch (ModelException ex) {
             response.put(ResponseParameters.OPERATION_FAILED, new ArrayList<>());
         }

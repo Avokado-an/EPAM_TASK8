@@ -1,7 +1,7 @@
 package com.anton.day6.controller.invoker;
 
-import com.anton.day6.helper.ArrayListHelper;
 import com.anton.day6.controller.responce.ResponseParameters;
+import com.anton.day6.helper.ArrayListHelper;
 import com.anton.day6.model.comparator.AuthorComparator;
 import com.anton.day6.model.comparator.BookNameComparator;
 import com.anton.day6.model.comparator.PublishYearComparator;
@@ -77,7 +77,7 @@ public class InvokerTest {
         params.put(ResponseParameters.NAME, "Book1");
         Map<String, List<Book>> actualMap = Invoker.getInstance().doRequest(
                 ResponseParameters.FIND + ResponseParameters.NAME, params);
-        Book actualBook = actualMap.get(ResponseParameters.FIND + ResponseParameters.NAME + ": " + "Book1").get(0);
+        Book actualBook = actualMap.get(ResponseParameters.OPERATION_SUCCEED).get(0);
         Book expected = new Book
                 (1900, "Book1", "Publisher1", Arrays.asList("Author1", "Author11"));
 
@@ -89,7 +89,7 @@ public class InvokerTest {
         Map<String, String> params = new HashMap<>();
         params.put(ResponseParameters.PUBLISHER, "Publisher1");
         Map<String, List<Book>> actualMap = Invoker.getInstance().doRequest(ResponseParameters.FIND + ResponseParameters.PUBLISHER, params);
-        List<Book> actualBooks = actualMap.get(ResponseParameters.FIND + ResponseParameters.PUBLISHER + ": " + "Publisher1");
+        List<Book> actualBooks = actualMap.get(ResponseParameters.OPERATION_SUCCEED);
         List<Book> expectedBooks = new ArrayList<>(Collections.singletonList(new Book
                 (1900, "Book1", "Publisher1", Arrays.asList("Author1", "Author11"))));
 
@@ -100,8 +100,9 @@ public class InvokerTest {
     public void doRequestFindYearValidTest() {
         Map<String, String> params = new HashMap<>();
         params.put(ResponseParameters.PUBLISH_YEAR, "2002");
-        Map<String, List<Book>> actualMap = Invoker.getInstance().doRequest(ResponseParameters.FIND + ResponseParameters.PUBLISH_YEAR, params);
-        List<Book> actualBooks = actualMap.get(ResponseParameters.FIND + ResponseParameters.PUBLISH_YEAR + ": " + "2002");
+        Map<String, List<Book>> actualMap = Invoker.getInstance().doRequest(
+                ResponseParameters.FIND + ResponseParameters.PUBLISH_YEAR, params);
+        List<Book> actualBooks = actualMap.get(ResponseParameters.OPERATION_SUCCEED);
         List<Book> expectedBooks = new ArrayList<>(Arrays.asList(
                 new Book(2005, "Book4", "Publisher4", Arrays.asList("Author4", "Author41")),
                 new Book(2005, "Book5", "Publisher5", Arrays.asList("Author5", "Author51"))));
@@ -114,7 +115,7 @@ public class InvokerTest {
         params.put(ResponseParameters.AUTHORS, "Author1");
         Map<String, List<Book>> actualMap = Invoker.getInstance().
                 doRequest(ResponseParameters.FIND + ResponseParameters.AUTHORS, params);
-        List<Book> actualBooks = actualMap.get(ResponseParameters.FIND + ResponseParameters.AUTHORS + ": " + "Author1");
+        List<Book> actualBooks = actualMap.get(ResponseParameters.OPERATION_SUCCEED);
         List<Book> expectedBooks = new ArrayList<>(Collections.singletonList(new Book
                 (1900, "Book1", "Publisher1", Arrays.asList("Author1", "Author11"))));
         assertEquals(actualBooks, expectedBooks);
@@ -127,7 +128,7 @@ public class InvokerTest {
         params.put(ResponseParameters.SORT + ResponseParameters.NAME, "");
         List<Book> sortedBooks = Invoker.getInstance().
                 doRequest(ResponseParameters.SORT + ResponseParameters.NAME, params).
-                get(ResponseParameters.SORT + ResponseParameters.NAME);
+                get(ResponseParameters.OPERATION_SUCCEED);
         boolean isSorted = arrHandler.isSorted(new ArrayList<>(sortedBooks), new BookNameComparator());
         assertTrue(isSorted);
     }
@@ -139,7 +140,7 @@ public class InvokerTest {
         params.put(ResponseParameters.SORT + ResponseParameters.PUBLISHER, "");
         List<Book> sortedBooks = Invoker.getInstance().doRequest
                 (ResponseParameters.SORT + ResponseParameters.PUBLISHER, params).
-                get(ResponseParameters.SORT + ResponseParameters.PUBLISHER);
+                get(ResponseParameters.OPERATION_SUCCEED);
         boolean isSorted = arrHandler.isSorted(new ArrayList<>(sortedBooks), new PublisherComparator());
         assertTrue(isSorted);
     }
@@ -151,7 +152,7 @@ public class InvokerTest {
         params.put(ResponseParameters.SORT + ResponseParameters.PUBLISH_YEAR, "");
         List<Book> sortedBooks = Invoker.getInstance().doRequest
                 (ResponseParameters.SORT + ResponseParameters.PUBLISH_YEAR, params).
-                get(ResponseParameters.SORT + ResponseParameters.PUBLISH_YEAR);
+                get(ResponseParameters.OPERATION_SUCCEED);
         boolean isSorted = arrHandler.isSorted(new ArrayList<>(sortedBooks), new PublishYearComparator());
         assertTrue(isSorted);
     }
@@ -163,7 +164,7 @@ public class InvokerTest {
         params.put(ResponseParameters.SORT + ResponseParameters.AUTHORS, "");
         List<Book> sortedBooks = Invoker.getInstance().doRequest
                 (ResponseParameters.SORT + ResponseParameters.AUTHORS, params).
-                get(ResponseParameters.SORT + ResponseParameters.AUTHORS);
+                get(ResponseParameters.OPERATION_SUCCEED);
         boolean isSorted = arrHandler.isSorted(new ArrayList<>(sortedBooks), new AuthorComparator());
         assertTrue(isSorted);
     }

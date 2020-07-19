@@ -18,9 +18,7 @@ public class SearchByYearCommand implements Command {
         try {
             String year = request.get(ResponseParameters.PUBLISH_YEAR);
             List<Book> books = LibraryServiceImplementation.getInstance().findBooksByPublishYear(year);
-            StringBuilder message = new StringBuilder();
-            message.append(ResponseParameters.FIND).append(ResponseParameters.PUBLISH_YEAR).append(": ").append(year);
-            response.put(message.toString(), books);
+            response.put(ResponseParameters.OPERATION_SUCCEED, books);
         } catch (ModelException ex) {
             response.put(ResponseParameters.OPERATION_FAILED, new ArrayList<>());
         }

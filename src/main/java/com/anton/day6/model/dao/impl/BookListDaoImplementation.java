@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 public class BookListDaoImplementation implements BookListDao {
     private static BookListDaoImplementation instance;
 
-    //todo search in dao
     private BookListDaoImplementation() {
     }
 

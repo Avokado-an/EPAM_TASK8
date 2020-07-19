@@ -1,6 +1,9 @@
 package com.anton.day6.controller.responce;
 
 public class ResponseParameters {
+    private ResponseParameters() {
+    }
+
     public static final String NAME = "name";
     public static final String AUTHORS = "authors";
     public static final String PUBLISHER = "publisher";

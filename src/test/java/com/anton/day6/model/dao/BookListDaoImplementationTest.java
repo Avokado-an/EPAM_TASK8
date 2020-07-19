@@ -11,7 +11,6 @@ import com.anton.day6.model.exception.ModelException;
 import com.anton.day6.model.service.impl.LibraryServiceImplementation;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

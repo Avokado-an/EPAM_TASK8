@@ -17,7 +17,7 @@ public class Library {
     }
 
     public static Library getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new Library();
         }
         return instance;
@@ -28,13 +28,13 @@ public class Library {
     }
 
     public void setBooks(List<Book> books) {
-        if(books.size() < MAX_CAPACITY) {
+        if (books.size() < MAX_CAPACITY) {
             this.books = books;
         }
     }
 
     public void addBook(Book book) throws ModelException {
-        if(MAX_CAPACITY > books.size() && !books.contains(book)) {
+        if (MAX_CAPACITY > books.size() && !books.contains(book)) {
             books.add(book);
         } else {
             throw new ModelException();
@@ -63,7 +63,7 @@ public class Library {
             return false;
         }
         Library library = (Library) o;
-        if(getBooks().size() != library.getBooks().size()) {
+        if (getBooks().size() != library.getBooks().size()) {
             return false;
         }
         return getBooks().containsAll(library.getBooks());
@@ -71,7 +71,7 @@ public class Library {
 
     @Override
     public int hashCode() {
-        return 31 + (int)books.stream().filter(b -> b != null).mapToInt(b -> b.hashCode()).count();
+        return 31 + (int) books.stream().filter(b -> b != null).mapToInt(b -> b.hashCode()).count();
     }
 
     private String booksToString() {

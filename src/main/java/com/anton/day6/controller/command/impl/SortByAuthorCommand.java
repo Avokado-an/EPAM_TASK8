@@ -17,9 +17,7 @@ public class SortByAuthorCommand implements Command {
         Map<String, List<Book>> response = new HashMap<>();
         try {
             List<Book> books = LibraryServiceImplementation.getInstance().sortBooksByAuthors();
-            StringBuilder message = new StringBuilder();
-            message.append(ResponseParameters.SORT).append(ResponseParameters.AUTHORS);
-            response.put(message.toString(), books);
+            response.put(ResponseParameters.OPERATION_SUCCEED, books);
         } catch (ModelException ex) {
             response.put(ResponseParameters.OPERATION_FAILED, new ArrayList<>());
         }

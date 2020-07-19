@@ -10,7 +10,8 @@ import java.util.Map;
 public class Invoker {
     private static Invoker instance;
 
-    private Invoker() {}
+    private Invoker() {
+    }
 
     public static Invoker getInstance() {
         if (instance == null) {

@@ -1,9 +1,5 @@
 package com.anton.day6.model.service.impl;
 
-import com.anton.day6.model.comparator.AuthorComparator;
-import com.anton.day6.model.comparator.BookNameComparator;
-import com.anton.day6.model.comparator.PublishYearComparator;
-import com.anton.day6.model.comparator.PublisherComparator;
 import com.anton.day6.model.creator.BookCreator;
 import com.anton.day6.model.dao.impl.BookListDaoImplementation;
 import com.anton.day6.model.entity.Book;
@@ -11,14 +7,10 @@ import com.anton.day6.model.exception.ModelException;
 import com.anton.day6.model.service.LibraryService;
 import com.anton.day6.model.validator.BookValidator;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class LibraryServiceImplementation implements LibraryService {
     private static LibraryServiceImplementation instance;
-    private static final int FIRST = 0;
 
     private LibraryServiceImplementation() {
     }

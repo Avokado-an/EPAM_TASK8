@@ -18,9 +18,7 @@ public class SearchByAuthorCommand implements Command {
         try {
             String author = request.get(ResponseParameters.AUTHORS);
             List<Book> books = LibraryServiceImplementation.getInstance().findBooksByAuthor(author);
-            StringBuilder message = new StringBuilder();
-            message.append(ResponseParameters.FIND).append(ResponseParameters.AUTHORS).append(": ").append(author);
-            response.put(message.toString(), books);
+            response.put(ResponseParameters.OPERATION_SUCCEED, books);
         } catch (ModelException ex) {
             response.put(ResponseParameters.OPERATION_FAILED, new ArrayList<>());
         }
