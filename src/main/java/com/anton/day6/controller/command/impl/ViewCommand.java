@@ -1,7 +1,7 @@
 package com.anton.day6.controller.command.impl;
 
 import com.anton.day6.controller.command.Command;
-import com.anton.day6.controller.parametersProvider.Parameters;
+import com.anton.day6.controller.responce.ResponseParameters;
 import com.anton.day6.model.entity.Book;
 import com.anton.day6.model.exception.ModelException;
 import com.anton.day6.model.service.impl.LibraryServiceImplementation;
@@ -16,9 +16,9 @@ public class ViewCommand implements Command {
     public Map<String, List<Book>> execute(Map<String, String> request) {
         Map<String, List<Book>> response = new HashMap<>();
         try {
-            response.put(Parameters.VIEW_ALL, LibraryServiceImplementation.getInstance().findAllBooks());
+            response.put(ResponseParameters.VIEW_ALL, LibraryServiceImplementation.getInstance().findAllBooks());
         } catch (ModelException ex) {
-            response.put(Parameters.OPERATION_FAILED, new ArrayList<>());
+            response.put(ResponseParameters.OPERATION_FAILED, new ArrayList<>());
         }
         return response;
     }

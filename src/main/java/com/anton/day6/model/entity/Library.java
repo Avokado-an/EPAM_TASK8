@@ -33,14 +33,12 @@ public class Library {
         }
     }
 
-    public boolean addBook(Book book) throws ModelException {
-        boolean flag = false;
+    public void addBook(Book book) throws ModelException {
         if(MAX_CAPACITY > books.size() && !books.contains(book)) {
-            flag = books.add(book);
+            books.add(book);
         } else {
             throw new ModelException();
         }
-        return flag;
     }
 
     public boolean removeBook(Book book) {

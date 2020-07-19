@@ -1,6 +1,6 @@
-package com.anton.day6.controller.parametersProvider;
+package com.anton.day6.controller.responce;
 
-public class Parameters {
+public class ResponseParameters {
     public static final String NAME = "name";
     public static final String AUTHORS = "authors";
     public static final String PUBLISHER = "publisher";

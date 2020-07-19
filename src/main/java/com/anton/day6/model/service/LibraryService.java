@@ -6,7 +6,7 @@ import com.anton.day6.model.exception.ModelException;
 import java.util.List;
 
 public interface LibraryService {
-    void addBook(Book book) throws ModelException;
+    void addBook(String year, String name, String publisher, String authors) throws ModelException;
     void removeBook(String name) throws ModelException;
     List<Book> sortBooksByAuthors() throws ModelException;
     List<Book> sortBooksByPublisher() throws ModelException;

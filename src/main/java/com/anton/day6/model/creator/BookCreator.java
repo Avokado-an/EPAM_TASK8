@@ -11,9 +11,6 @@ public class BookCreator {
     public Book createBook(String publishYear, String bookName, String publisher, String author) throws ModelException {
         BookValidator validator = new BookValidator();
         Book book;
-        if (publisher == null || publishYear == null || bookName == null || author == null) {
-            throw new ModelException();
-        }
         if (validator.validatePublishYear(publishYear) &&
                 validator.validateStringData(bookName) && validator.validateStringData(publisher) &&
                 validator.validateStringData(author) && validator.validateAuthors(author)) {

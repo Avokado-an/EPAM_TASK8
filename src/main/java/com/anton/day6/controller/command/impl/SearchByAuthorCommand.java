@@ -1,8 +1,7 @@
 package com.anton.day6.controller.command.impl;
 
 import com.anton.day6.controller.command.Command;
-import com.anton.day6.controller.exception.ControllerException;
-import com.anton.day6.controller.parametersProvider.Parameters;
+import com.anton.day6.controller.responce.ResponseParameters;
 import com.anton.day6.model.entity.Book;
 import com.anton.day6.model.exception.ModelException;
 import com.anton.day6.model.service.impl.LibraryServiceImplementation;
@@ -17,13 +16,13 @@ public class SearchByAuthorCommand implements Command {
     public Map<String, List<Book>> execute(Map<String, String> request) {
         Map<String, List<Book>> response = new HashMap<>();
         try {
-            String author = request.get(Parameters.AUTHORS);
-            List<Book> books = LibraryServiceImplementation.getInstance().findBooksByAuthor(Parameters.AUTHORS);
+            String author = request.get(ResponseParameters.AUTHORS);
+            List<Book> books = LibraryServiceImplementation.getInstance().findBooksByAuthor(author);
             StringBuilder message = new StringBuilder();
-            message.append(Parameters.FIND).append(Parameters.AUTHORS).append(": ").append(author);
+            message.append(ResponseParameters.FIND).append(ResponseParameters.AUTHORS).append(": ").append(author);
             response.put(message.toString(), books);
         } catch (ModelException ex) {
-            response.put(Parameters.OPERATION_FAILED, new ArrayList<>());
+            response.put(ResponseParameters.OPERATION_FAILED, new ArrayList<>());
         }
         return response;
     }

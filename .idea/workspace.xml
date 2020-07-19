@@ -1,7 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="070235d5-3df2-4a7a-84af-fd9421f5fbc6" name="Default Changelist" comment="" />
+    <list default="true" id="070235d5-3df2-4a7a-84af-fd9421f5fbc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/anton/day6/controller/helper/ArrayListHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/creator/BookCreatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/validator/BookValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/331f49559c75a55d04d9e1df8949fb98db4c76c7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f40513285b4166cb5d7c30e2a0aa8fb60a9074e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f40513285b4166cb5d7c30e2a0aa8fb60a9074e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c7d227501863b04f493e46f7d7ca4b9d4f258ce" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c7d227501863b04f493e46f7d7ca4b9d4f258ce" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/77deec8b0360b897588fed60f2432ea5b1a2e412" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c20c92cde5f710212d77f8b6c85070acccb176d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c20c92cde5f710212d77f8b6c85070acccb176d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a14bd167da212c57daf70729641a7d924811c28" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a14bd167da212c57daf70729641a7d924811c28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c42899f2a8b6bcc24fd09b807058d8f42385cff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d640873329fa80139f861cc2e8400683eda62ec1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d640873329fa80139f861cc2e8400683eda62ec1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e410aa8349db6661b8a32002bfddd7872cb0aeaa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e410aa8349db6661b8a32002bfddd7872cb0aeaa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/AddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/FailedCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/FailedCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/RemoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/RemoveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByAuthorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByAuthorCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByNameCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByPublisherCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByPublisherCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByYearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByYearCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByAuthorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByAuthorCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByNameCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByPublisherCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByPublisherCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByYearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByYearCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/ViewCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/ViewCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/invoker/Invoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/invoker/Invoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/parametersProvider/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/responce/ResponseParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/creator/BookCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/creator/BookCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/dao/BookListDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/dao/BookListDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/dao/impl/BookListDAOImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/dao/impl/BookListDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/entity/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/entity/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/service/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/service/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/service/impl/LibraryServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/service/impl/LibraryServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/validator/BookValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/validator/BookValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/controller/data/CommandExecutionData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/controller/invoker/InvokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day6/controller/invoker/InvokerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/service/LibraryServiceImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/service/LibraryServiceImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/AddCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/AddCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/FailedCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/FailedCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/RemoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/RemoveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByAuthorCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByAuthorCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByNameCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByNameCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByPublisherCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByPublisherCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByYearCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByYearCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByAuthorCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByAuthorCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByNameCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByNameCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByPublisherCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByPublisherCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByYearCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByYearCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/ViewCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/ViewCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/invoker/Invoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/invoker/Invoker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/parametersProvider/Parameters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/dao/BookListDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/model/dao/BookListDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/dao/impl/BookListDAOImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/model/dao/impl/BookListDAOImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/entity/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/model/entity/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/service/LibraryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/model/service/LibraryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/service/impl/LibraryServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/anton/day6/model/service/impl/LibraryServiceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/controller/data/CommandExecutionData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/controller/invoker/InvokerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/anton/day6/controller/invoker/InvokerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/model/service/LibraryServiceImplementationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/anton/day6/model/service/LibraryServiceImplementationTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +78,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,6 +89,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1eJ5sjbXXtnDb7kZFiD5q0USJpG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,6 +97,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -39,8 +106,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="TestNG.InvokerTest.doRequestSortAuthorValidTest">
-    <configuration name="InvokerTest.doRequestFindAuthorValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.InvokerTest.doRequestFailedCommand">
+    <configuration name="InvokerTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EPAM_DAY6" />
       <extension name="coverage">
         <pattern>
@@ -50,7 +117,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.anton.day6.controller.invoker" />
       <option name="MAIN_CLASS_NAME" value="com.anton.day6.controller.invoker.InvokerTest" />
-      <option name="METHOD_NAME" value="doRequestFindAuthorValidTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvokerTest.doRequestAddValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EPAM_DAY6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anton.day6.controller.invoker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.anton.day6.controller.invoker" />
+      <option name="MAIN_CLASS_NAME" value="com.anton.day6.controller.invoker.InvokerTest" />
+      <option name="METHOD_NAME" value="doRequestAddValidTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -58,7 +142,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InvokerTest.doRequestSortAuthorValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InvokerTest.doRequestFailedCommand" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EPAM_DAY6" />
       <extension name="coverage">
         <pattern>
@@ -68,7 +152,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.anton.day6.controller.invoker" />
       <option name="MAIN_CLASS_NAME" value="com.anton.day6.controller.invoker.InvokerTest" />
-      <option name="METHOD_NAME" value="doRequestSortAuthorValidTest" />
+      <option name="METHOD_NAME" value="doRequestFailedCommand" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -76,7 +160,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InvokerTest.doRequestSortNameValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InvokerTest.doRequestRemoveValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EPAM_DAY6" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +170,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.anton.day6.controller.invoker" />
       <option name="MAIN_CLASS_NAME" value="com.anton.day6.controller.invoker.InvokerTest" />
-      <option name="METHOD_NAME" value="doRequestSortNameValidTest" />
+      <option name="METHOD_NAME" value="doRequestRemoveValidTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -94,35 +178,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InvokerTest.doRequestSortPublisherValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryServiceImplementationTest.addBookValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EPAM_DAY6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.anton.day6.controller.invoker.*" />
+          <option name="PATTERN" value="com.anton.day6.model.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.anton.day6.controller.invoker" />
-      <option name="MAIN_CLASS_NAME" value="com.anton.day6.controller.invoker.InvokerTest" />
-      <option name="METHOD_NAME" value="doRequestSortPublisherValidTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InvokerTest.doRequestSortYearValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EPAM_DAY6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.anton.day6.controller.invoker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.anton.day6.controller.invoker" />
-      <option name="MAIN_CLASS_NAME" value="com.anton.day6.controller.invoker.InvokerTest" />
-      <option name="METHOD_NAME" value="doRequestSortYearValidTest" />
+      <option name="PACKAGE_NAME" value="com.anton.day6.model.service" />
+      <option name="MAIN_CLASS_NAME" value="com.anton.day6.model.service.LibraryServiceImplementationTest" />
+      <option name="METHOD_NAME" value="addBookValidTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.InvokerTest.doRequestSortAuthorValidTest" />
-        <item itemvalue="TestNG.InvokerTest.doRequestFindAuthorValidTest" />
-        <item itemvalue="TestNG.InvokerTest.doRequestSortYearValidTest" />
-        <item itemvalue="TestNG.InvokerTest.doRequestSortPublisherValidTest" />
-        <item itemvalue="TestNG.InvokerTest.doRequestSortNameValidTest" />
+        <item itemvalue="TestNG.InvokerTest.doRequestFailedCommand" />
+        <item itemvalue="TestNG.InvokerTest" />
+        <item itemvalue="TestNG.InvokerTest.doRequestRemoveValidTest" />
+        <item itemvalue="TestNG.InvokerTest.doRequestAddValidTest" />
+        <item itemvalue="TestNG.LibraryServiceImplementationTest.addBookValidTest" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +224,10 @@
       <workItem from="1594574182903" duration="3006000" />
       <workItem from="1594633318935" duration="15845000" />
       <workItem from="1594807508680" duration="4269000" />
-      <workItem from="1594886871380" duration="15530000" />
+      <workItem from="1594886871380" duration="17236000" />
+      <workItem from="1594973160717" duration="3040000" />
+      <workItem from="1595156789512" duration="1360000" />
+      <workItem from="1595190514732" duration="6716000" />
     </task>
     <servers />
   </component>
@@ -170,6 +239,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1594294257549" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1594975971256">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1594975971256" />
     <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1594721207647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -182,54 +255,62 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="581" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1594734319191" />
+    <state x="310" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594909878688">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="310" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594909878688" />
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594733253437">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594733253437" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1594814423941">
+    <state x="499" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1594974113046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594814423941" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1594898088681">
+    <state x="499" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594974113046" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1594973606727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594898088681" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1594898088681">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594973606727" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1595197653196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594898088681" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1594898088680">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595197653196" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1595197653196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594898088680" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1594898088681">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595197653196" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1595197653196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594898088681" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1594888767526">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595197653196" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1595197653196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594888767526" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1594888767525">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595197653196" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1594930847278">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594888767525" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1594888767525">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594930847278" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1594930847278">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594888767525" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1594888767525">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594930847278" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1594930847278">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594888767525" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594930847278" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1594930847278">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594930847278" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1594294238110">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594294238110" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1594807511830">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1595190528488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594807511830" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1595190528488" />
     <state x="209" y="34" key="new project wizard" timestamp="1594581890487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,6 +1,6 @@
 package com.anton.day6.model.dao.impl;
 
-import com.anton.day6.model.dao.BookListDAO;
+import com.anton.day6.model.dao.BookListDao;
 import com.anton.day6.model.entity.Book;
 import com.anton.day6.model.entity.Library;
 import com.anton.day6.model.exception.ModelException;
@@ -8,22 +8,22 @@ import com.anton.day6.model.exception.ModelException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookListDAOImplementation implements BookListDAO {
-    private static BookListDAOImplementation instance;
+public class BookListDaoImplementation implements BookListDao {
+    private static BookListDaoImplementation instance;
 //todo search in dao
-    private BookListDAOImplementation() {
+    private BookListDaoImplementation() {
     }
 
-    public static BookListDAOImplementation getInstance () {
+    public static BookListDaoImplementation getInstance () {
         if(instance == null) {
-            instance = new BookListDAOImplementation();
+            instance = new BookListDaoImplementation();
         }
         return instance;
     }
 
     @Override
-    public boolean addBook(Book book) throws ModelException {
-        return Library.getInstance().addBook(book);
+    public void addBook(Book book) throws ModelException {
+        Library.getInstance().addBook(book);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class BookListDAOImplementation implements BookListDAO {
                 .filter(b -> b.getBookName().equals(bookName))
                 .findFirst()
                 .orElse(null);
-        boolean flag = false;
+        boolean flag;
         if (book != null) {
             flag = Library.getInstance().removeBook(book);
         } else {

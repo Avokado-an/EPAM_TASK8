@@ -4,7 +4,8 @@ import com.anton.day6.model.comparator.AuthorComparator;
 import com.anton.day6.model.comparator.BookNameComparator;
 import com.anton.day6.model.comparator.PublishYearComparator;
 import com.anton.day6.model.comparator.PublisherComparator;
-import com.anton.day6.model.dao.impl.BookListDAOImplementation;
+import com.anton.day6.model.creator.BookCreator;
+import com.anton.day6.model.dao.impl.BookListDaoImplementation;
 import com.anton.day6.model.entity.Book;
 import com.anton.day6.model.exception.ModelException;
 import com.anton.day6.model.service.LibraryService;
@@ -29,28 +30,22 @@ public class LibraryServiceImplementation implements LibraryService {
     }
 
     @Override
-    public void addBook(Book book) throws ModelException {
-        boolean flag = BookListDAOImplementation.getInstance().addBook(book);
-        if(!flag) {
-            throw new ModelException();
-        }
+    public void addBook(String year, String name, String publisher, String authors) throws ModelException {
+        BookCreator creator = new BookCreator();
+        Book newBook = creator.createBook(year, name, publisher, authors);
+        BookListDaoImplementation.getInstance().addBook(newBook);
     }
 
     @Override
     public void removeBook(String name) throws ModelException {
-        boolean flag;
         if (name == null) {
             throw new ModelException();
         }
-        Book book = findBooksByName(name).get(FIRST);
-        if (book == null) {
-            flag = false;
-        } else {
-            flag = BookListDAOImplementation.getInstance().removeBook(name);
-        }
-        if(!flag) {
+        List<Book> books = findBooksByName(name);
+        if (books.isEmpty()) {
             throw new ModelException();
         }
+        BookListDaoImplementation.getInstance().removeBook(name);
     }
 
     @Override
@@ -127,7 +122,7 @@ public class LibraryServiceImplementation implements LibraryService {
 
     @Override
     public List<Book> findAllBooks() throws ModelException {
-        return BookListDAOImplementation.getInstance().findAll();
+        return BookListDaoImplementation.getInstance().findAll();
     }
 
     private List<Book> sortBooks(Comparator<Book> bookComparator) throws ModelException {
