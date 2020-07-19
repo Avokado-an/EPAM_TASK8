@@ -1,6 +1,6 @@
 package com.anton.day6.controller.invoker;
 
-import com.anton.day6.controller.helper.ArrayListHelper;
+import com.anton.day6.helper.ArrayListHelper;
 import com.anton.day6.controller.responce.ResponseParameters;
 import com.anton.day6.model.comparator.AuthorComparator;
 import com.anton.day6.model.comparator.BookNameComparator;
@@ -8,7 +8,6 @@ import com.anton.day6.model.comparator.PublishYearComparator;
 import com.anton.day6.model.comparator.PublisherComparator;
 import com.anton.day6.model.dao.impl.BookListDaoImplementation;
 import com.anton.day6.model.entity.Book;
-import com.anton.day6.model.entity.Library;
 import com.anton.day6.model.exception.ModelException;
 import com.anton.day6.model.service.impl.LibraryServiceImplementation;
 import org.testng.annotations.AfterClass;
@@ -37,6 +36,7 @@ public class InvokerTest {
         BookListDaoImplementation.getInstance().addBook(book6);
         BookListDaoImplementation.getInstance().addBook(book4);
         BookListDaoImplementation.getInstance().addBook(book3);
+        BookListDaoImplementation.getInstance().addBook(book7);
     }
 
     @AfterClass

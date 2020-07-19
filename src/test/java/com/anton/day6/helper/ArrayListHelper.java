@@ -1,4 +1,4 @@
-package com.anton.day6.controller.helper;
+package com.anton.day6.helper;
 
 import java.util.ArrayList;
 import java.util.Comparator;
