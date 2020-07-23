@@ -6,13 +6,14 @@ import com.anton.day6.model.entity.Book;
 import com.anton.day6.model.exception.DaoException;
 import com.anton.day6.model.exception.ServiceException;
 import com.anton.day6.model.service.LibraryService;
-import com.anton.day6.model.dao.requests.type.TagType;
+import com.anton.day6.model.dao.request.type.TagType;
 import com.anton.day6.model.validator.BookValidator;
 
 import java.util.List;
 
 public class LibraryServiceImplementation implements LibraryService {
     private static LibraryServiceImplementation instance;
+    private static final String EMPTY_STRING = "";
 
     private LibraryServiceImplementation() {
     }
@@ -50,7 +51,7 @@ public class LibraryServiceImplementation implements LibraryService {
     @Override
     public List<Book> sortBooksByAuthors() throws ServiceException {
         try {
-            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_AUTHOR, "");
+            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_AUTHOR, EMPTY_STRING);
         } catch (DaoException ex) {
             throw new ServiceException(ex);
         }
@@ -59,7 +60,7 @@ public class LibraryServiceImplementation implements LibraryService {
     @Override
     public List<Book> sortBooksByPublisher() throws ServiceException {
         try {
-            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_PUBLISHER, "");
+            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_PUBLISHER, EMPTY_STRING);
         } catch (DaoException ex) {
             throw new ServiceException(ex);
         }
@@ -68,7 +69,7 @@ public class LibraryServiceImplementation implements LibraryService {
     @Override
     public List<Book> sortBooksByPublishYear() throws ServiceException {
         try {
-            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_YEAR, "");
+            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_YEAR, EMPTY_STRING);
         } catch (DaoException ex) {
             throw new ServiceException(ex);
         }
@@ -77,7 +78,7 @@ public class LibraryServiceImplementation implements LibraryService {
     @Override
     public List<Book> sortBooksByName() throws ServiceException {
         try {
-            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_NAME, "");
+            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_NAME, EMPTY_STRING);
         } catch (DaoException ex) {
             throw new ServiceException(ex);
         }

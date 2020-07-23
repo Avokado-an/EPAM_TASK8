@@ -2,7 +2,7 @@ package com.anton.day6.model.dao;
 
 import com.anton.day6.model.entity.Book;
 import com.anton.day6.model.exception.DaoException;
-import com.anton.day6.model.dao.requests.type.TagType;
+import com.anton.day6.model.dao.request.type.TagType;
 
 import java.util.List;
 

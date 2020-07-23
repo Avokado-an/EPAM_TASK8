@@ -1,4 +1,4 @@
-package com.anton.day6.model.dao.requests.type;
+package com.anton.day6.model.dao.request.type;
 
 public enum TagType {
     FIND_BY_NAME(" WHERE book_name = ?"),
