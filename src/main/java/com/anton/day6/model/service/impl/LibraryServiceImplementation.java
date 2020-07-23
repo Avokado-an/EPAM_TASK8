@@ -3,8 +3,10 @@ package com.anton.day6.model.service.impl;
 import com.anton.day6.model.creator.BookCreator;
 import com.anton.day6.model.dao.impl.BookListDaoImplementation;
 import com.anton.day6.model.entity.Book;
-import com.anton.day6.model.exception.ModelException;
+import com.anton.day6.model.exception.DaoException;
+import com.anton.day6.model.exception.ServiceException;
 import com.anton.day6.model.service.LibraryService;
+import com.anton.day6.model.dao.requests.type.TagType;
 import com.anton.day6.model.validator.BookValidator;
 
 import java.util.List;
@@ -23,78 +25,118 @@ public class LibraryServiceImplementation implements LibraryService {
     }
 
     @Override
-    public void addBook(String year, String name, String publisher, String authors) throws ModelException {
-        BookCreator creator = new BookCreator();
-        Book newBook = creator.createBook(year, name, publisher, authors);
-        BookListDaoImplementation.getInstance().addBook(newBook);
+    public void addBook(String year, String name, String publisher, String authors) throws ServiceException {
+        try {
+            BookCreator creator = new BookCreator();
+            Book newBook = creator.createBook(year, name, publisher, authors);
+            BookListDaoImplementation.getInstance().addBook(newBook);
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public void removeBook(String name) throws ModelException {
+    public void removeBook(String name) throws ServiceException {
         if (name == null) {
-            throw new ModelException();
+            throw new ServiceException();
         }
-        List<Book> books = findBooksByName(name);
-        if (books.isEmpty()) {
-            throw new ModelException();
+        try {
+            BookListDaoImplementation.getInstance().removeBook(name);
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
         }
-        BookListDaoImplementation.getInstance().removeBook(name);
     }
 
     @Override
-    public List<Book> sortBooksByAuthors() throws ModelException {
-        return BookListDaoImplementation.getInstance().sortBooksByAuthors();
+    public List<Book> sortBooksByAuthors() throws ServiceException {
+        try {
+            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_AUTHOR, "");
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public List<Book> sortBooksByPublisher() throws ModelException {
-        return BookListDaoImplementation.getInstance().sortBooksByPublisher();
+    public List<Book> sortBooksByPublisher() throws ServiceException {
+        try {
+            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_PUBLISHER, "");
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public List<Book> sortBooksByPublishYear() throws ModelException {
-        return BookListDaoImplementation.getInstance().sortBooksByPublishYear();
+    public List<Book> sortBooksByPublishYear() throws ServiceException {
+        try {
+            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_YEAR, "");
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public List<Book> sortBooksByName() throws ModelException {
-        return BookListDaoImplementation.getInstance().sortBooksByName();
+    public List<Book> sortBooksByName() throws ServiceException {
+        try {
+            return BookListDaoImplementation.getInstance().findBooks(TagType.SORT_BY_NAME, "");
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public List<Book> findBooksByAuthor(String tag) throws ModelException {
+    public List<Book> findBooksByAuthor(String tag) throws ServiceException {
         if (tag == null) {
-            throw new ModelException();
+            throw new ServiceException();
         }
-        return BookListDaoImplementation.getInstance().findBooksByAuthor(tag);
+        try {
+            return BookListDaoImplementation.getInstance().findBooks(TagType.FIND_BY_AUTHOR, tag);
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public List<Book> findBooksByPublisher(String tag) throws ModelException {
+    public List<Book> findBooksByPublisher(String tag) throws ServiceException {
         if (tag == null) {
-            throw new ModelException();
+            throw new ServiceException();
         }
-        return BookListDaoImplementation.getInstance().findBooksByPublisher(tag);
+        try {
+            return BookListDaoImplementation.getInstance().findBooks(TagType.FIND_BY_PUBLISHER, tag);
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public List<Book> findBooksByPublishYear(String tag) throws ModelException {
+    public List<Book> findBooksByPublishYear(String tag) throws ServiceException {
         if (tag == null || !(new BookValidator().validatePublishYear(tag))) {
-            throw new ModelException();
+            throw new ServiceException();
         }
-        return BookListDaoImplementation.getInstance().findBooksByPublishYear(tag);
+        try {
+            return BookListDaoImplementation.getInstance().findBooks(TagType.FIND_BY_YEAR, tag);
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public List<Book> findBooksByName(String tag) throws ModelException {
+    public List<Book> findBooksByName(String tag) throws ServiceException {
         if (tag == null) {
-            throw new ModelException();
+            throw new ServiceException();
         }
-        return BookListDaoImplementation.getInstance().findBooksByName(tag);
+        try {
+            return BookListDaoImplementation.getInstance().findBooks(TagType.FIND_BY_NAME, tag);
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 
     @Override
-    public List<Book> findAllBooks() throws ModelException {
-        return BookListDaoImplementation.getInstance().findAllBooks();
+    public List<Book> findAllBooks() throws ServiceException {
+        try {
+            return BookListDaoImplementation.getInstance().findAllBooks();
+        } catch (DaoException ex) {
+            throw new ServiceException(ex);
+        }
     }
 }

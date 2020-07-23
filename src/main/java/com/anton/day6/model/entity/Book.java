@@ -12,18 +12,10 @@ public class Book {
     private String publisher;
     private List<String> authors;
 
-    static class IdGenerator {
-        public UUID generateId() {
-            return UUID.randomUUID();
-        }
-    }
-
     public Book() {
-        id = new IdGenerator().generateId();
     }
 
     public Book(int publishYear, String bookName, String publisher, List<String> authors) {
-        id = new IdGenerator().generateId();
         this.publishYear = publishYear;
         this.bookName = bookName;
         this.publisher = publisher;
@@ -70,6 +62,17 @@ public class Book {
         this.authors = authors;
     }
 
+    public String authorsToString() {
+        String comma = ", ";
+        StringBuilder allAuthors = new StringBuilder();
+        for (String author : authors) {
+            if (author != null) {
+                allAuthors.append(author).append(comma);
+            }
+        }
+        return allAuthors.toString();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -99,16 +102,5 @@ public class Book {
     public String toString() {
         return String.format("%s(%d) published by %s, written by %s",
                 bookName, publishYear, publisher, authorsToString());
-    }
-
-    private String authorsToString() {
-        String space = " ";
-        StringBuilder allAuthors = new StringBuilder();
-        for (String author : authors) {
-            if (author != null) {
-                allAuthors.append(author).append(space);
-            }
-        }
-        return allAuthors.toString();
     }
 }

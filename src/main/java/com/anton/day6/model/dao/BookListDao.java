@@ -1,30 +1,17 @@
 package com.anton.day6.model.dao;
 
 import com.anton.day6.model.entity.Book;
-import com.anton.day6.model.exception.ModelException;
+import com.anton.day6.model.exception.DaoException;
+import com.anton.day6.model.dao.requests.type.TagType;
 
 import java.util.List;
 
 public interface BookListDao {
-    void addBook(Book book) throws ModelException;
+    void addBook(Book book) throws DaoException;
 
-    boolean removeBook(String bookName) throws ModelException;
+    void removeBook(String bookName) throws DaoException;
 
-    List<Book> sortBooksByAuthors() throws ModelException;
+    List<Book> findBooks(TagType tagType, String tag) throws DaoException;
 
-    List<Book> sortBooksByPublisher() throws ModelException;
-
-    List<Book> sortBooksByPublishYear() throws ModelException;
-
-    List<Book> sortBooksByName() throws ModelException;
-
-    List<Book> findBooksByAuthor(String tag) throws ModelException;
-
-    List<Book> findBooksByPublisher(String tag) throws ModelException;
-
-    List<Book> findBooksByPublishYear(String tag) throws ModelException;
-
-    List<Book> findBooksByName(String tag) throws ModelException;
-
-    List<Book> findAllBooks() throws ModelException;
+    List<Book> findAllBooks() throws DaoException;
 }

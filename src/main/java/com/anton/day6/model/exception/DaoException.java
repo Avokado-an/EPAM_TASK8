@@ -1,18 +1,18 @@
 package com.anton.day6.model.exception;
 
-public class ModelException extends Exception {
-    public ModelException() {
+public class DaoException extends Exception {
+    public DaoException() {
     }
 
-    public ModelException(String message) {
+    public DaoException(String message) {
         super(message);
     }
 
-    public ModelException(String message, Throwable cause) {
+    public DaoException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public ModelException(Throwable cause) {
+    public DaoException(Throwable cause) {
         super(cause);
     }
 }

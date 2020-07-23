@@ -26,7 +26,7 @@ public class BookValidator {
             String illegalCharacters = "[<>#=&%]";
             Pattern pattern = Pattern.compile(illegalCharacters);
             Matcher matcher = pattern.matcher(data);
-            if (!matcher.find()) {
+            if (!matcher.find() && data.length() < 50) {
                 flag = true;
             }
         }

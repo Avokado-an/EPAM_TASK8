@@ -1,7 +1,7 @@
 package com.anton.day6.model.creator;
 
 import com.anton.day6.model.entity.Book;
-import com.anton.day6.model.exception.ModelException;
+import com.anton.day6.model.exception.DaoException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,7 +19,7 @@ public class BookCreatorTest {
     }
 
     @Test
-    public void createBookValidTest() throws ModelException {
+    public void createBookValidTest() throws DaoException {
         String year = "1400";
         String name = "Book1";
         String publisher = "publisher1";
@@ -41,8 +41,8 @@ public class BookCreatorTest {
         };
     }
 
-    @Test(dataProvider = "invalidBook", expectedExceptions = ModelException.class)
-    public void createBookValidTest(String year, String name, String publisher, String authors) throws ModelException {
+    @Test(dataProvider = "invalidBook", expectedExceptions = DaoException.class)
+    public void createBookValidTest(String year, String name, String publisher, String authors) throws DaoException {
         creator.createBook(year, name, publisher, authors);
     }
 }
