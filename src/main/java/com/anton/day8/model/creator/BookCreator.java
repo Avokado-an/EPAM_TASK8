@@ -8,6 +8,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BookCreator {
+    private static final String EXCEPTION_MESSAGE = "Non valid book info";
+
     public Book createBook(String publishYear, String bookName, String publisher, String author) throws DaoException {
         BookValidator validator = new BookValidator();
         Book book;
@@ -16,7 +18,7 @@ public class BookCreator {
                 validator.validateStringData(author) && validator.validateAuthors(author)) {
             book = new Book(defineYear(publishYear), bookName, publisher, defineAuthors(author));
         } else {
-            throw new DaoException();
+            throw new DaoException(EXCEPTION_MESSAGE);
         }
         return book;
     }
@@ -28,7 +30,7 @@ public class BookCreator {
                 validator.validateStringData(author) && validator.validateAuthors(author)) {
             book = new Book(publishYear, bookName, publisher, defineAuthors(author));
         } else {
-            throw new DaoException();
+            throw new DaoException(EXCEPTION_MESSAGE);
         }
         return book;
     }

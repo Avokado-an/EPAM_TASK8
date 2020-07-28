@@ -6,6 +6,7 @@ import com.anton.day8.model.entity.Book;
 import com.anton.day8.model.exception.ServiceException;
 import com.anton.day8.model.service.impl.LibraryServiceImplementation;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +20,7 @@ public class SearchByNameCommand implements Command {
             List<Book> books = LibraryServiceImplementation.getInstance().findBooksByName(name);
             response.put(ResponseParameters.OPERATION_SUCCEED, books);
         } catch (ServiceException ex) {
-            ex.printStackTrace();//response.put(ResponseParameters.OPERATION_FAILED, new ArrayList<>());
+            response.put(ResponseParameters.OPERATION_FAILED, new ArrayList<>());
         }
         return response;
     }

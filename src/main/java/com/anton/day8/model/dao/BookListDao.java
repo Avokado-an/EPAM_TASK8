@@ -1,8 +1,8 @@
 package com.anton.day8.model.dao;
 
+import com.anton.day8.model.dao.request.type.RequestType;
 import com.anton.day8.model.entity.Book;
 import com.anton.day8.model.exception.DaoException;
-import com.anton.day8.model.dao.request.type.RequestType;
 
 import java.util.List;
 

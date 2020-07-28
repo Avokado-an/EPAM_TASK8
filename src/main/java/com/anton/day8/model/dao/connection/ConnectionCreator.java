@@ -1,4 +1,4 @@
-package com.anton.day8.model.creator;
+package com.anton.day8.model.dao.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,6 +6,10 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class ConnectionCreator {
+    private ConnectionCreator() {
+
+    }
+
     public static Connection provideConnection() throws SQLException {
         Connection connection;
         ResourceBundle rb = ResourceBundle.getBundle("property.database");
@@ -15,12 +19,4 @@ public class ConnectionCreator {
         connection = DriverManager.getConnection(url, username, password);
         return connection;
     }
-
-    /*public static void closeConnection(Connection connection) {
-        try {
-            connection.close();
-        } catch (SQLException e) {
-            System.out.println("Can not close connection");
-        }
-    }*/
 }

@@ -1,12 +1,12 @@
 package com.anton.day8.model.dao.impl;
 
 import com.anton.day8.model.creator.BookCreator;
-import com.anton.day8.model.creator.ConnectionCreator;
 import com.anton.day8.model.dao.BookListDao;
+import com.anton.day8.model.dao.connection.ConnectionCreator;
 import com.anton.day8.model.dao.request.SqlRequest;
+import com.anton.day8.model.dao.request.type.RequestType;
 import com.anton.day8.model.entity.Book;
 import com.anton.day8.model.exception.DaoException;
-import com.anton.day8.model.dao.request.type.RequestType;
 
 import java.sql.*;
 import java.util.ArrayList;
