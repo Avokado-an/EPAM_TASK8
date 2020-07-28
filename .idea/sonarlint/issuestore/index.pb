@@ -69,9 +69,9 @@ h
 8src/test/java/com/anton/day6/helper/ArrayListHelper.java,4\6\462a32aca66917371cd3c3df13e5478c8bb0aa64
 q
 Asrc/main/java/com/anton/day6/model/creator/ConnectionCreator.java,c\0\c0a33e478d5ff8a872308b9d0fbda5c34513b859
-p
-@src/main/java/com/anton/day6/model/dao/requests/SqlRequests.java,f\b\fb382eb8f91e39302e3b990542499872fcd13235
 [
 +src/main/java/com/anton/day6/main/Main.java,8\a\8ae5d8ea1d0c9b79afc528b9e790f4f798f1c083
-q
-Asrc/main/java/com/anton/day6/model/dao/requests/type/TagType.java,5\c\5ca06aa3e6a79c72eafa71890434ddec0d1182cf
+t
+Dsrc/main/java/com/anton/day6/model/dao/request/type/RequestType.java,b\6\b6153c69e2334f96aff99982365980b8ea775376
+n
+>src/main/java/com/anton/day6/model/dao/request/SqlRequest.java,3\c\3cb47d791fdc5eb4299e38a3690352675e50dc60
