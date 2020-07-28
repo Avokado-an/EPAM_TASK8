@@ -45,7 +45,10 @@ public class BookValidatorTest {
     @DataProvider(name = "invalidStringData")
     public Object[][] provideInvalidStringData() {
         return new Object[][]{
-                {null}, {"asdf<a"}, {"asdf>a"}, {"asdf%a"}, {"asdf&a"}, {"asdf#a"}, {"asdf=a"}, {""}
+                {null}, {"asdf<a"}, {"asdf>a"}, {"asdf%a"}, {"asdf&a"}, {"asdf#a"}, {"asdf=a"}, {""},
+                {"rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" +
+                        "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" +
+                        "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"}
         };
     }
 

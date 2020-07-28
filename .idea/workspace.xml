@@ -2,50 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="070235d5-3df2-4a7a-84af-fd9421f5fbc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5ca06aa3e6a79c72eafa71890434ddec0d1182cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb382eb8f91e39302e3b990542499872fcd13235" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe95abc11c4f543d668be92747f5cfeadbf54cd0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe95abc11c4f543d668be92747f5cfeadbf54cd0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/helper/comparator/BookYearComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/FailedCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/FailedCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/RemoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/RemoveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByAuthorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/SearchByAuthorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/SearchByNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByPublisherCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/SearchByPublisherCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SearchByYearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/SearchByYearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByAuthorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/SortByAuthorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/SortByNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByPublisherCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/SortByPublisherCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/SortByYearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/SortByYearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/command/impl/ViewCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/command/impl/ViewCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/exception/ControllerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/exception/ControllerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/invoker/Invoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/invoker/Invoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/provider/ActionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/provider/ActionProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/responce/ResponseParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/responce/ResponseParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/controller/type/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/controller/type/CommandType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/creator/BookCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/creator/BookCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/creator/ConnectionCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/creator/ConnectionCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/dao/BookListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/dao/BookListDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/dao/impl/BookListDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/dao/impl/BookListDaoImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/dao/request/SqlRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/dao/request/SqlRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/dao/request/type/TagType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/dao/request/type/RequestType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/exception/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/exception/DaoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/exception/ServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/service/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/service/LibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/service/impl/LibraryServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/service/impl/LibraryServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day6/model/validator/BookValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/validator/BookValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/controller/invoker/InvokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/controller/invoker/InvokerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/helper/ArrayListHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/helper/ArrayListHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/creator/BookCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/creator/BookCreatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/dao/BookListDaoImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/dao/BookListDaoImplementationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/dao/BookListDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/dao/BookListDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/service/LibraryServiceImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/service/LibraryServiceImplementationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day6/model/validator/BookValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/validator/BookValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day8/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/dao/impl/BookListDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/dao/impl/BookListDaoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/service/impl/LibraryServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/service/impl/LibraryServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/validator/BookValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anton/day8/model/validator/BookValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day8/controller/invoker/InvokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/controller/invoker/InvokerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/creator/BookCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/creator/BookCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/dao/BookListDaoImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/dao/BookListDaoImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/dao/BookListDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/service/LibraryServiceImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/service/LibraryServiceImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/validator/BookValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/anton/day8/model/validator/BookValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/AddCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/FailedCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/RemoveCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByAuthorCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByNameCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByPublisherCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SearchByYearCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByAuthorCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByNameCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByPublisherCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/SortByYearCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/command/impl/ViewCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/exception/ControllerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/invoker/Invoker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/provider/ActionProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/responce/ResponseParameters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/controller/type/CommandType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/creator/BookCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/creator/ConnectionCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/dao/BookListDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/dao/impl/BookListDAOImplementation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/dao/requests/SqlRequests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/dao/requests/type/TagType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/entity/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/exception/DaoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/exception/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/service/LibraryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/service/impl/LibraryServiceImplementation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/anton/day6/model/validator/BookValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/controller/invoker/InvokerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/helper/ArrayListHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/model/creator/BookCreatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/model/dao/BookListDaoImplementationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/model/dao/BookListDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/model/service/LibraryServiceImplementationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/anton/day6/model/validator/BookValidatorTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,33 +132,7 @@
       <recent name="com.anton.day6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.anton.day8.main.Main" />
-      <module name="EPAM_DAY6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.anton.day8.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.anton.day6.model.dao.MainTest" />
-      <module name="EPAM_DAY6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.anton.day8.model.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.InvokerTest">
     <configuration name="BookListDaoImplementationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EPAM_DAY6" />
       <extension name="coverage">
@@ -160,7 +141,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.anton.day6.model.dao" />
+      <option name="PACKAGE_NAME" value="com.anton.day8.model.dao" />
       <option name="MAIN_CLASS_NAME" value="com.anton.day8.model.dao.BookListDaoImplementationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
@@ -169,7 +150,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookListDaoImplementationTest.removeBookValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BookListDaoImplementationTest.findBooksByNameValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EPAM_DAY6" />
       <extension name="coverage">
         <pattern>
@@ -177,9 +158,27 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.anton.day6.model.dao" />
+      <option name="PACKAGE_NAME" value="com.anton.day8.model.dao" />
       <option name="MAIN_CLASS_NAME" value="com.anton.day8.model.dao.BookListDaoImplementationTest" />
-      <option name="METHOD_NAME" value="removeBookValidTest" />
+      <option name="METHOD_NAME" value="findBooksByNameValidTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookListDaoImplementationTest.findBooksByPublishYearValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EPAM_DAY6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anton.day8.model.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.anton.day8.model.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.anton.day8.model.dao.BookListDaoImplementationTest" />
+      <option name="METHOD_NAME" value="findBooksByPublishYearValidTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -195,8 +194,25 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.anton.day6.controller.invoker" />
+      <option name="PACKAGE_NAME" value="com.anton.day8.controller.invoker" />
       <option name="MAIN_CLASS_NAME" value="com.anton.day8.controller.invoker.InvokerTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryServiceImplementationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EPAM_DAY6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anton.day8.model.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.anton.day8.model.service" />
+      <option name="MAIN_CLASS_NAME" value="com.anton.day8.model.service.LibraryServiceImplementationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -206,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MainTest" />
         <item itemvalue="TestNG.InvokerTest" />
+        <item itemvalue="TestNG.LibraryServiceImplementationTest" />
         <item itemvalue="TestNG.BookListDaoImplementationTest" />
-        <item itemvalue="TestNG.BookListDaoImplementationTest.removeBookValidTest" />
+        <item itemvalue="TestNG.BookListDaoImplementationTest.findBooksByPublishYearValidTest" />
+        <item itemvalue="TestNG.BookListDaoImplementationTest.findBooksByNameValidTest" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +261,7 @@
       <workItem from="1595509350316" duration="171000" />
       <workItem from="1595514464432" duration="2947000" />
       <workItem from="1595855346390" duration="1723000" />
-      <workItem from="1595961227706" duration="249000" />
+      <workItem from="1595961227706" duration="3144000" />
     </task>
     <servers />
   </component>
@@ -253,6 +269,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="477" y="44" key="#InvokerTest.doRequestAddValidTest" timestamp="1595964079566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="44" key="#InvokerTest.doRequestAddValidTest/0.0.1536.824@0.0.1536.824" timestamp="1595964079566" />
     <state x="361" y="72" key="#Project_Structure" timestamp="1594294257549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -261,14 +281,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595415189176" />
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1594975971256">
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595963096647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1594975971256" />
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1595414174930">
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1595963096647" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1595962508440">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1595414174930" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1595962508440" />
     <state x="400" y="102" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1594027124456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -297,22 +317,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595509520350" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1595432794732">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1595964383908">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595432794732" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1595432794732">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595964383908" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1595964383907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595432794732" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1595432794732">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595964383907" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1595964383907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595432794732" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1595432794732">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595964383907" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1595964383908">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595432794732" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595964383908" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1594930847278">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

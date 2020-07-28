@@ -37,7 +37,9 @@ public class BookCreatorTest {
                 {"1234", "aa&a", "a", "a"}, {"1234", null, "a", "a"}, {"1234", "", "a", "a"},
                 {"1234", "a", "aa&a", "a"}, {"1234", "a", null, "a"}, {"1234", "aa&a", "", "a"},
                 {"1234", "a", "a", "a, a, a, a, a, a, a, a, a, a, a"}, {"1234", "aa&a", "a", ""},
-                {"1234", "aa&a", "a", null}
+                {"1234", "aa&a", "a", null}, {"1234", "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" +
+                "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" +
+                "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr", "a", "a, a"}
         };
     }
 

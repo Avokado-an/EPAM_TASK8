@@ -7,6 +7,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class BookValidator {
+    private static final int MAX_STRING_LENGTH = 50;
+    private static final String ILLEGAL_CHARACTERS = "[<>#=&%]";
+    private static final String COMMA = ", ";
+
     public boolean validatePublishYear(String publishYear) {
         boolean flag = false;
         if (publishYear != null) {
@@ -23,10 +27,9 @@ public class BookValidator {
     public boolean validateStringData(String data) {
         boolean flag = false;
         if (data != null && !data.isEmpty()) {
-            String illegalCharacters = "[<>#=&%]";
-            Pattern pattern = Pattern.compile(illegalCharacters);
+            Pattern pattern = Pattern.compile(ILLEGAL_CHARACTERS);
             Matcher matcher = pattern.matcher(data);
-            if (!matcher.find() && data.length() < 50) {
+            if (!matcher.find() && data.length() < MAX_STRING_LENGTH) {
                 flag = true;
             }
         }
@@ -36,8 +39,7 @@ public class BookValidator {
     public boolean validateAuthors(String authorsString) {
         boolean flag = false;
         if (authorsString != null && !authorsString.isEmpty()) {
-            String comma = ", ";
-            List<String> authors = Arrays.asList(authorsString.split(comma));
+            List<String> authors = Arrays.asList(authorsString.split(COMMA));
             if (authors.size() <= 10) {
                 flag = true;
             }

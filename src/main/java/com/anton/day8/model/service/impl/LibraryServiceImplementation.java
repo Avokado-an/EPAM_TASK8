@@ -13,7 +13,7 @@ import java.util.List;
 
 public class LibraryServiceImplementation implements LibraryService {
     private static LibraryServiceImplementation instance;
-    private static final String EMPTY_REQUEST = "";
+    private static final String EMPTY_TAG_REQUEST = "";
 
     private LibraryServiceImplementation() {
     }
@@ -27,7 +27,7 @@ public class LibraryServiceImplementation implements LibraryService {
 
     @Override
     public void addBook(String year, String name, String publisher, String authors) throws ServiceException {
-        if (name == null) {
+        if (name == null || year == null || publisher == null || authors == null) {
             throw new ServiceException();
         }
         try {
@@ -58,7 +58,7 @@ public class LibraryServiceImplementation implements LibraryService {
     @Override
     public List<Book> sortBooksByAuthors() throws ServiceException {
         try {
-            return BookListDaoImplementation.getInstance().findBooks(RequestType.ORDER_BY_AUTHOR, EMPTY_REQUEST);
+            return BookListDaoImplementation.getInstance().findBooks(RequestType.ORDER_BY_AUTHOR, EMPTY_TAG_REQUEST);
         } catch (DaoException ex) {
             throw new ServiceException(ex);
         }
@@ -67,7 +67,7 @@ public class LibraryServiceImplementation implements LibraryService {
     @Override
     public List<Book> sortBooksByPublisher() throws ServiceException {
         try {
-            return BookListDaoImplementation.getInstance().findBooks(RequestType.ORDER_BY_PUBLISHER, EMPTY_REQUEST);
+            return BookListDaoImplementation.getInstance().findBooks(RequestType.ORDER_BY_PUBLISHER, EMPTY_TAG_REQUEST);
         } catch (DaoException ex) {
             throw new ServiceException(ex);
         }
@@ -76,7 +76,7 @@ public class LibraryServiceImplementation implements LibraryService {
     @Override
     public List<Book> sortBooksByPublishYear() throws ServiceException {
         try {
-            return BookListDaoImplementation.getInstance().findBooks(RequestType.ORDER_BY_YEAR, EMPTY_REQUEST);
+            return BookListDaoImplementation.getInstance().findBooks(RequestType.ORDER_BY_YEAR, EMPTY_TAG_REQUEST);
         } catch (DaoException ex) {
             throw new ServiceException(ex);
         }
@@ -85,7 +85,7 @@ public class LibraryServiceImplementation implements LibraryService {
     @Override
     public List<Book> sortBooksByName() throws ServiceException {
         try {
-            return BookListDaoImplementation.getInstance().findBooks(RequestType.ORDER_BY_NAME, EMPTY_REQUEST);
+            return BookListDaoImplementation.getInstance().findBooks(RequestType.ORDER_BY_NAME, EMPTY_TAG_REQUEST);
         } catch (DaoException ex) {
             throw new ServiceException(ex);
         }

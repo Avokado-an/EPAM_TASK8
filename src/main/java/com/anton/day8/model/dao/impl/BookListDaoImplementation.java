@@ -15,10 +15,6 @@ import java.util.List;
 public class BookListDaoImplementation implements BookListDao {
     private static BookListDaoImplementation instance;
 
-    //todo use prepared statements for potentially problematic requests(google preparedStatements)
-    //todo check sql injection attack
-    //todo check loggs
-    //todo check connection pool and dataSource
     private BookListDaoImplementation() {
     }
 
